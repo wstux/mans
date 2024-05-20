@@ -31,7 +31,7 @@ Example
 	name = <name>
 [core]
 	editor = vim
-[credential "https://github.com/"]
+[credential "https://<accaunt>/"]
 	provider = generic
 [credential]
 	helper = store
@@ -39,7 +39,7 @@ Example
 
 .git-credentials
 ```
-"https://<user>:<password>@github.com"
+https://<user>:<password>@<accaunt>
 ```
 
 Example
@@ -59,6 +59,6 @@ Example
 
 .git-credentials
 ```
-"https://githubuser:github_token@github.com"
+https://githubuser:github_token@github.com
 ```
 
