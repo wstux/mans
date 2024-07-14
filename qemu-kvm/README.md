@@ -25,9 +25,18 @@ $ virsh list --all
 
 1. Start `virt-manager` and go to `View -> Edit -> Preferences -> Console`. Activate `Resize guest with window: On`;
 2. In the VM machine go to `View -> Scale Display -> Auto resize VM with window`;
-3. Install the following packages on the guest virtual machine `qemu-guest-agent`, `xserver-xorg-video-qxl`, `spice-vdagent`;
-4. Enable `spice-vdagent` service in systemctl with command `systemctl enable spice-vdagent`;
-5. Run `spice-vdagent` service in systemctl with command `systemctl start spice-vdagent`.
+3. Install the following packages on the guest virtual machine `qemu-guest-agent`, `xserver-xorg-video-qxl`, `spice-vdagent`
+```shell
+$ sudo apt install qemu-guest-agent xserver-xorg-video-qxl spice-vdagent
+```
+4. Enable `spice-vdagent` service in systemctl with command
+```shell
+systemctl enable spice-vdagent
+```
+5. Run `spice-vdagent` service in systemctl with command
+```shell
+systemctl start spice-vdagent`
+```
 
 ## Shared clipboard
 
